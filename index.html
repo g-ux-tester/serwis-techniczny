@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Strona testowa dla Artura</title>
+<title>ART-KRAN | Pomoc Techniczna Utrzymania Ruchu</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -22,7 +22,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Inter, sans-serif;
+font-family:Inter,sans-serif;
 }
 
 body{
@@ -55,10 +55,8 @@ align-items:center;
 padding:18px 0;
 }
 
-.logo{
-font-weight:700;
-font-size:20px;
-color:var(--navy);
+.logo img{
+height:42px;
 }
 
 nav ul{
@@ -98,39 +96,19 @@ opacity:.9;
 margin-bottom:40px;
 }
 
-.buttons{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-}
-
 .btn{
 padding:14px 28px;
 border-radius:6px;
 font-weight:600;
 text-decoration:none;
 transition:.3s;
-}
-
-.btn-primary{
 background:var(--blue);
 color:white;
 }
 
-.btn-primary:hover{
+.btn:hover{
 transform:translateY(-2px);
 box-shadow:0 8px 20px rgba(0,0,0,.2);
-}
-
-.btn-secondary{
-border:2px solid white;
-color:white;
-}
-
-.btn-secondary:hover{
-background:white;
-color:#111;
 }
 
 /* SECTIONS */
@@ -171,50 +149,13 @@ color:var(--blue);
 margin-bottom:15px;
 }
 
-/* FEATURES */
-
-.features{
-background:var(--light);
-}
-
-.feature{
-text-align:center;
-padding:20px;
-}
-
-.feature i{
-font-size:30px;
-color:var(--blue);
-margin-bottom:15px;
-}
-
 /* ABOUT */
 
 .about{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-align-items:center;
-}
-
-.about img{
-width:100%;
-border-radius:10px;
-}
-
-/* AREA */
-
-.area{
-background:var(--light);
+max-width:800px;
+margin:auto;
 text-align:center;
-}
-
-.cities{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-font-weight:500;
+font-size:18px;
 }
 
 /* CONTACT */
@@ -228,6 +169,10 @@ font-size:36px;
 font-weight:700;
 color:var(--blue);
 margin-bottom:20px;
+}
+
+.contact p{
+margin:6px 0;
 }
 
 /* FOOTER */
@@ -245,11 +190,7 @@ font-size:14px;
 @media(max-width:800px){
 
 .hero h1{
-font-size:36px;
-}
-
-.about{
-grid-template-columns:1fr;
+font-size:34px;
 }
 
 nav ul{
@@ -266,16 +207,17 @@ display:none;
 <nav>
 <div class="container nav-inner">
 
-<div class="logo">TECH-SERWIS</div>
+<div class="logo">
+<img src="logo-art-kran.svg" alt="ART-KRAN">
+</div>
 
 <ul>
 <li><a href="#uslugi">Usługi</a></li>
-<li><a href="#onas">O nas</a></li>
-<li><a href="#obszar">Obszar</a></li>
+<li><a href="#onas">O firmie</a></li>
 <li><a href="#kontakt">Kontakt</a></li>
 </ul>
 
-<div class="phone">📞 600 000 000</div>
+<div class="phone">📞 602-296-813</div>
 
 </div>
 </nav>
@@ -284,14 +226,11 @@ display:none;
 
 <div class="container">
 
-<h1>Profesjonalna obsługa techniczna obiektów</h1>
+<h1>Pomoc Techniczna Utrzymania Ruchu</h1>
 
-<p>Szybki serwis, diagnostyka i naprawy dla firm oraz klientów prywatnych.</p>
+<p>Serwis, naprawa i utrzymanie sprawności maszyn oraz urządzeń dźwigowych.</p>
 
-<div class="buttons">
-<a class="btn btn-primary" href="#kontakt">Zadzwoń teraz</a>
-<a class="btn btn-secondary" href="#kontakt">Poproś o wycenę</a>
-</div>
+<a class="btn" href="#kontakt">Skontaktuj się</a>
 
 </div>
 
@@ -301,70 +240,44 @@ display:none;
 
 <div class="container">
 
-<h2 class="section-title">Nasze usługi</h2>
+<h2 class="section-title">Zakres usług</h2>
 
 <div class="grid">
 
 <div class="card">
 <i class="fa-solid fa-screwdriver-wrench"></i>
-<h3>Konserwacja techniczna</h3>
-<p>Regularne przeglądy i utrzymanie instalacji w pełnej sprawności.</p>
+<h3>Naprawa i konserwacja</h3>
+<p>Maszyny oraz urządzenia dźwigowe.</p>
 </div>
 
 <div class="card">
-<i class="fa-solid fa-bolt"></i>
-<h3>Naprawy awaryjne</h3>
-<p>Szybka reakcja na awarie i natychmiastowe usuwanie usterek.</p>
+<i class="fa-solid fa-gears"></i>
+<h3>Optymalizacja pracy maszyn</h3>
+<p>Wdrażanie rozwiązań usprawniających działanie urządzeń.</p>
 </div>
 
 <div class="card">
-<i class="fa-solid fa-plug"></i>
-<h3>Instalacje</h3>
-<p>Montaż i modernizacja instalacji technicznych.</p>
+<i class="fa-solid fa-industry"></i>
+<h3>Utrzymanie ruchu</h3>
+<p>Wsparcie działów UR oraz utrzymanie infrastruktury.</p>
 </div>
 
 <div class="card">
-<i class="fa-solid fa-magnifying-glass"></i>
-<h3>Diagnostyka</h3>
-<p>Precyzyjna analiza problemów i optymalizacja systemów.</p>
+<i class="fa-solid fa-wrench"></i>
+<h3>Prace techniczne</h3>
+<p>Spawalnicze, ślusarskie oraz elektryczne.</p>
 </div>
 
+<div class="card">
+<i class="fa-solid fa-clipboard-check"></i>
+<h3>Przygotowanie do UDT</h3>
+<p>Przygotowanie urządzeń oraz asysta podczas badań.</p>
 </div>
 
-</div>
-
-</section>
-
-<section class="features">
-
-<div class="container">
-
-<h2 class="section-title">Dlaczego my</h2>
-
-<div class="grid">
-
-<div class="feature">
-<i class="fa-solid fa-clock"></i>
-<h3>Szybka reakcja</h3>
-<p>Serwis dostępny nawet tego samego dnia.</p>
-</div>
-
-<div class="feature">
-<i class="fa-solid fa-user-gear"></i>
-<h3>Doświadczenie</h3>
-<p>Wieloletnia praktyka w obsłudze technicznej.</p>
-</div>
-
-<div class="feature">
-<i class="fa-solid fa-receipt"></i>
-<h3>Transparentne ceny</h3>
-<p>Jasna wycena bez ukrytych kosztów.</p>
-</div>
-
-<div class="feature">
-<i class="fa-solid fa-location-dot"></i>
-<h3>Lokalna firma</h3>
-<p>Działamy szybko na terenie regionu.</p>
+<div class="card">
+<i class="fa-solid fa-arrow-up-right-dots"></i>
+<h3>Usługi wysokościowe</h3>
+<p>Prace serwisowe na wysokości.</p>
 </div>
 
 </div>
@@ -377,40 +290,17 @@ display:none;
 
 <div class="container about">
 
-<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc" alt="serwis">
-
-<div>
-
-<h2>O naszej firmie</h2>
+<h2 class="section-title">O firmie</h2>
 
 <p>
-Jesteśmy lokalną firmą techniczną specjalizującą się w obsłudze instalacji oraz naprawach serwisowych.
+ART-KRAN świadczy usługi w zakresie pomocy technicznej utrzymania ruchu,
+serwisu oraz konserwacji maszyn i urządzeń dźwigowych.
 </p>
 
 <p>
-Obsługujemy zarówno firmy, jak i klientów indywidualnych zapewniając szybkie i skuteczne wsparcie techniczne.
+Firma wspiera działy utrzymania ruchu w zakładach przemysłowych
+zapewniając diagnostykę, naprawy oraz przygotowanie urządzeń do badań UDT.
 </p>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="obszar" class="area">
-
-<div class="container">
-
-<h2 class="section-title">Obszar działania</h2>
-
-<div class="cities">
-<span>Warszawa</span>
-<span>Pruszków</span>
-<span>Piaseczno</span>
-<span>Legionowo</span>
-<span>Otwock</span>
-<span>Wołomin</span>
-</div>
 
 </div>
 
@@ -422,11 +312,14 @@ Obsługujemy zarówno firmy, jak i klientów indywidualnych zapewniając szybkie
 
 <h2 class="section-title">Kontakt</h2>
 
-<div class="phone-big">600 000 000</div>
+<div class="phone-big">602-296-813</div>
 
-<p>kontakt@techserwis.pl</p>
+<p><strong>ART-KRAN</strong></p>
+<p>Artur Narajczyk</p>
 
-<p>Warszawa i okolice</p>
+<p>📧 art.kran@op.pl</p>
+
+<p>NIP: 797-19-28-458</p>
 
 </div>
 
@@ -434,13 +327,13 @@ Obsługujemy zarówno firmy, jak i klientów indywidualnych zapewniając szybkie
 
 <footer>
 
-TECH-SERWIS  
-📞 600 000 000  
-✉ kontakt@techserwis.pl  
+ART-KRAN | Pomoc Techniczna Utrzymania Ruchu  
+📞 602-296-813  
+✉ art.kran@op.pl  
 
 <br><br>
 
-© 2026 Wszystkie prawa zastrzeżone
+© 2026 ART-KRAN
 
 </footer>
 
